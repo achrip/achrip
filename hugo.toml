@@ -1,3 +1,112 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Ashraf Alif Adillah'
+theme = 'PaperMod'
+enableEmoji = true
+
+[minify]
+disableXML = true
+
+[outputs]
+home = ['HTML', 'RSS', 'JSON']
+
+[params]
+env = 'production'
+description = 'My personal Logseq Site by Hugo'
+author = 'Ashraf Alif Adillah'
+contact = 'achrip@proton.me'
+defautTheme = 'auto'
+ShowShareButtons = true
+ShowReadingTime = true
+# displayFullLangName = true
+ShowPostNavLinks = true
+ShowCodeCopyButtons = true
+ShowBreadCrumbs = true
+ShowRssButtonInSectionTermList = true
+ShowAllPagesInArchive = true
+ShowPageNums = false
+ShowToc = true
+copyright = "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
+mobileMenu = true
+
+  [params.profileMode]
+  enabled = false
+  title = 'Ashraf Alif Adillah'
+  imageUrl = '#'
+  imageTitle = 'my mugshot'
+
+    [[params.profileMode.buttons]]
+    name = 'Archives'
+    url = 'archives'
+
+    [[params.profileMode.buttons]]
+    name = 'Tags'
+    url = 'tags'
+
+  [params.homeInfoParams]
+  Title = 'Hi There! 👋'
+  Content = '''
+  Welcome to my Blog!  
+  This blog is created using [Hugo](https://gohugo.io/) and [Logseq](https://logseq.com)  
+  Happy Reading!
+  '''
+
+  [[params.socialIcons]]
+  name = 'github'
+  title = 'My Github Profile'
+  url = 'https://github.com/achrip'
+
+  [[params.socialIcons]]
+  name = 'Discord'
+  title = 'Join Discord Community'
+  url = '#'
+
+  [[params.socialIcons]]
+  name = 'X'
+  title = 'Share on X/Twitter'
+  url = 'https://x.com/intent/tweet/'
+
+  [[params.socialIcons]]
+  name = 'linkedin'
+  title = 'Connect with me'
+  url = 'https://linkedin.com/ashraf-adillah'
+  
+[[menu.main]]
+identifier = 'categories'
+name = 'Categories'
+url = '/categories/'
+weight = 10
+
+[[menu.main]]
+identifier = 'tags'
+name = 'Tags'
+url = '/tags/'
+weight = 20
+
+[[menu.main]]
+identifier = 'search'
+name = 'Search'
+url = '/search/'
+weight = 20
+
+[[menu.main]]
+identifier = 'archive'
+name = 'Archive'
+url = '/archives/'
+weight = 20
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+noClasses = false
+codeFences = true
+guessSyntax = true
+style = 'monokai'
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true
+
